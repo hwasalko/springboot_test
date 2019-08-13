@@ -13,7 +13,7 @@ public class TilesController {
     	
     	model.addAttribute("server_info", "local");
     	
-        return "index";
+        return "tiles/index";
     }
     
     @RequestMapping(value = "/depth2", method = RequestMethod.GET)
@@ -22,7 +22,7 @@ public class TilesController {
     	model.addAttribute("server_info", "local");
     	model.addAttribute("menu_name", "조회");
     	
-        return "sub/menu1";
+        return "tiles/sub/menu1";
     }
     
     @RequestMapping(value = "/depth3", method = RequestMethod.GET)
@@ -31,7 +31,7 @@ public class TilesController {
     	model.addAttribute("server_info", "local");
     	model.addAttribute("menu_name", "삭");
     	
-        return "sub/menu/depth3";
+        return "tiles/sub/menu/depth3";
     }
  
 }
